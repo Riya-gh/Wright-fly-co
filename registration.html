@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wright Fly Co - Register</title>
-  <link rel="icon" type="image/jpeg" href="https://www.creativefabrica.com/wp-content/uploads/2018/12/Airplane-monochrome-icon-by-Hoeda80.jpg">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2018/12/Airplane-monochrome-icon-by-Hoeda80.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Pacifico&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -13,7 +13,6 @@
       background: linear-gradient(to top, #dfe9f3 0%, #dfe9f3 100%);
       overflow-x: hidden;
     }
-
     .header {
       display: flex;
       justify-content: space-between;
@@ -21,22 +20,18 @@
       padding: 20px 40px;
       background-color: #2e796d;
       color: white;
-      position: relative;
       z-index: 10;
     }
-
     .logo img {
-      width: 80px;
-      height: 80px;
+      width: 120px;
+      height: 120px;
     }
-
     .nav-links a {
       color: white;
       margin-left: 20px;
       text-decoration: none;
       font-size: 16px;
     }
-
     .plane-animation {
       position: absolute;
       top: 100px;
@@ -44,17 +39,14 @@
       z-index: 2;
       animation: flyAcross 5s linear infinite;
     }
-
     @keyframes flyAcross {
       0% { left: -80px; top: 150px; }
       50% { top: 150px; }
       100% { left: 150%; top: 150px; }
     }
-
     .plane-animation img {
       height: 80px;
     }
-
     .register-container {
       max-width: 450px;
       background-color: #fdfdfd;
@@ -67,33 +59,26 @@
       z-index: 5;
       position: relative;
     }
-
     .register-container h2 {
       text-align: center;
       color: #2e7970;
     }
-
     .form-group {
       margin-bottom: 18px;
     }
-
     label {
       display: block;
       color: #2e7970;
       font-weight: 600;
       margin-bottom: 6px;
     }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"] {
+    input[type="text"], input[type="email"], input[type="password"] {
       width: 100%;
       padding: 10px;
       border: 1px solid #bbb;
       border-radius: 8px;
       background-color: #fdfcfb;
     }
-
     .btn-register {
       width: 100%;
       background-color: #2e7970;
@@ -105,22 +90,18 @@
       cursor: pointer;
       margin-top: 15px;
     }
-
     .btn-register:hover {
       background-color: #24665e;
     }
-
     .login-link {
       text-align: center;
       margin-top: 18px;
     }
-
     .login-link a {
       color: #2e7970;
       text-decoration: none;
       font-weight: 600;
     }
-
     .footer {
       text-align: center;
       color: #fff;
@@ -138,7 +119,7 @@
 
   <div class="header">
     <div class="logo">
-      <img src="logo.jpg" alt="Wright Fly Co Logo">
+      <img src="logo.png" alt="Wright Fly Co Logo" />
     </div>
     <div class="nav-links">
       <a href="#">About Us</a>
@@ -146,9 +127,8 @@
     </div>
   </div>
 
-  <!-- Moving Plane Animation -->
   <div class="plane-animation">
-    <img src="moving.png" alt="moving plane">
+    <img src="moving.png" alt="Moving Plane" />
   </div>
 
   <div class="register-container">
@@ -156,27 +136,27 @@
     <form>
       <div class="form-group">
         <label for="fullname">Full Name</label>
-        <input type="text" id="fullname" placeholder="Enter your full name">
+        <input type="text" id="fullname" placeholder="Enter your full name" />
       </div>
       <div class="form-group">
         <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="Enter your email">
+        <input type="email" id="email" placeholder="Enter your email" />
       </div>
       <div class="form-group">
         <label for="username">Username</label>
-        <input type="text" id="username" placeholder="Choose a username">
+        <input type="text" id="username" placeholder="Choose a username" />
       </div>
       <div class="form-group">
         <label for="password">Create Password</label>
-        <input type="password" id="password" placeholder="Create a password">
+        <input type="password" id="password" placeholder="Create a password" />
       </div>
       <div class="form-group">
         <label for="confirm-password">Confirm Password</label>
-        <input type="password" id="confirm-password" placeholder="Re-enter your password">
+        <input type="password" id="confirm-password" placeholder="Re-enter your password" />
       </div>
       <button class="btn-register" type="submit">Register</button>
       <div class="login-link">
-        Already have an account? <a href="login.html">Login Here</a>
+        Already have an account? <a href="index.html">Login Here</a>
       </div>
     </form>
   </div>
